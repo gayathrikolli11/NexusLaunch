@@ -1,0 +1,45 @@
+package com.example.nexuslaunch.di
+
+import android.content.Context
+import androidx.room.Room
+import com.example.nexuslaunch.data.db.AppDatabase
+import com.example.nexuslaunch.data.db.AppUsageDao
+import com.example.nexuslaunch.data.repository.AppRepositoryImpl
+import com.example.nexuslaunch.data.repository.UsageRepositoryImpl
+import com.example.nexuslaunch.domain.repository.AppRepository
+import com.example.nexuslaunch.domain.repository.UsageRepository
+import dagger.Binds
+import dagger.Module
+import dagger.Provides
+import dagger.hilt.InstallIn
+import dagger.hilt.android.qualifiers.ApplicationContext
+import dagger.hilt.components.SingletonComponent
+import javax.inject.Singleton
+
+@Module
+@InstallIn(SingletonComponent::class)
+object DatabaseModule {
+
+    @Provides
+    @Singleton
+    fun provideDatabase(@ApplicationContext context: Context): AppDatabase =
+        Room.databaseBuilder(context, AppDatabase::class.java, "nexus_db")
+            .fallbackToDestructiveMigration()
+            .build()
+
+    @Provides
+    fun provideAppUsageDao(db: AppDatabase): AppUsageDao = db.appUsageDao()
+}
+
+@Module
+@InstallIn(SingletonComponent::class)
+abstract class RepositoryModule {
+
+    @Binds
+    @Singleton
+    abstract fun bindAppRepository(impl: AppRepositoryImpl): AppRepository
+
+    @Binds
+    @Singleton
+    abstract fun bindUsageRepository(impl: UsageRepositoryImpl): UsageRepository
+}
