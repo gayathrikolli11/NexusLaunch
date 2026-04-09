@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "NexusLaunch"
 include(":app")
- 
+include(":ranking-engine")

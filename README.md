@@ -9,6 +9,13 @@ NexusLaunch replaces your default launcher and intelligently predicts which app 
 ## Demo
 
 > Set NexusLaunch as your default home app via Settings → Apps → Default Apps → Home App
+> 
+> ## Modules
+
+| Module | Description |
+|---|---|
+| `:app` | NexusLaunch Android launcher app |
+| `:ranking-engine` | Standalone ranking library — see [ranking-engine/README.md](ranking-engine/README.md) |
 
 ## Architecture
 

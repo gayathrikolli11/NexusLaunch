@@ -91,4 +91,6 @@ dependencies {
 
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     debugImplementation(libs.androidx.ui.tooling)
+
+    implementation(project(":ranking-engine"))
 }
