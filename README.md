@@ -14,7 +14,7 @@ NexusLaunch is a fully functional home screen replacement built with system-leve
 
 | Home Screen | App Drawer |
 |-------------|------------|
-| ![Home] <img width="205" height="454" alt="Screenshot 2026-05-16 161024" src="https://github.com/user-attachments/assets/1d1239da-24f0-4539-be3d-267ae0bcfa18" /> | ![Drawer]<img width="203" height="455" alt="Screenshot 2026-05-16 160954" src="https://github.com/user-attachments/assets/030611ba-8192-49c0-9a3c-bc9f2fe6a9c4" /> |
+| <img width="205" height="454" alt="Screenshot 2026-05-16 161024" src="https://github.com/user-attachments/assets/1d1239da-24f0-4539-be3d-267ae0bcfa18" /> | <img width="203" height="455" alt="Screenshot 2026-05-16 160954" src="https://github.com/user-attachments/assets/030611ba-8192-49c0-9a3c-bc9f2fe6a9c4" /> |
 
 ---
 
